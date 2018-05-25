@@ -1,10 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using PaymentContext.Shared.ValueObjects;
 
 namespace PaymentContext.Domain.Entities
 {
-    public class Subscription
+    public class Subscription : ValueObject
     {
         public Subscription(DateTime? expireDate)
         {
