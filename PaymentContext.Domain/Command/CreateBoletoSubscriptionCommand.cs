@@ -9,7 +9,7 @@ namespace PaymentContext.Domain.Commands
 {
     public class CreateBoletoSubscriptionCommand : Notifiable, ICommand
     {
-        public string FirstName { get; private set; }
+        public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Document { get; set; }
         public string Email { get; set; }
@@ -29,7 +29,7 @@ namespace PaymentContext.Domain.Commands
         public string Street { get; private set; }
         public string Number { get; private set; }
         public string City { get; private set; }
-        public string Neighborghood { get; private set; }
+        public string Neighborghood { get; set; }
         public string State { get; private set; }
         public string Country { get; private set; }
         public string ZipCode { get; private set; }
